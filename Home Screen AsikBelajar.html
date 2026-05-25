@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Website AsikBelajar </title>
+        <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="Home Screen css.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+<!-------------------------------------Nav Menu---------------------------------->
+<body>
+    <nav class="nav">
+        <div class="nav-logo">
+            <img src="https://media-public.canva.com/4YGeM/MAEz5J4YGeM/1/t.png" alt="Logo AsikBelajar" class="logo-img">
+            <p>AsikBelajar</p>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="Home Screen AsikBelajar.html" class="link active">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="link" id="materiBtn">Materi <i class="bx bx-chevron-down"></i></a>
+                    <ul class="dropdown-menu" id="materiDropdown">
+                        <li><a href="Materi Mapel.html?subject=sejarah" onclick="tampilkanMateri('sejarah');">Sejarah</a></li>
+                        <li><a href="Materi Mapel.html?subject=sosiologi" onclick="tampilkanMateri('sosiologi');">Sosiologi</a></li>
+                        <li><a href="Materi Mapel.html?subject=ekonomi" onclick="tampilkanMateri('ekonomi');">Ekonomi</a></li>
+                        <li><a href="Materi Mapel.html?subject=geografi" onclick="tampilkanMateri('geografi');">Geografi</a></li>
+                    </ul>
+                </li>
+                <li><a href="Latihan.html" class="link">Latihan</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <a href="index Web Belajar.html#target-login"><button class="btn" id="loginBtnNAV">Login</button></a>
+            
+            <span id="userGreeting" class="user-greeting" style="display: none;"></span>
+        </div>
+    </nav>
+
+    <section class="banner-section">
+        <img src="https://media.canva.com/v2/image-resize/format:JPG/height:1333/quality:92/uri:ifs%3A%2F%2FM%2Fbb967c92-559a-4623-a260-74596f6c5a8d/watermark:F/width:2000?csig=AAAAAAAAAAAAAAAAAAAAACqgLIpVRXhBWeDHfj7gpp_ZtZcUGGgcHtlxE06hYwEE&exp=1779258990&osig=AAAAAAAAAAAAAAAAAAAAAKgTS6wbAn_EK8F5arADaXJGwo2MQa2LURkbXvf_inlw&signer=media-rpc&x-canva-quality=screen_3x" alt="Background Kelas" class="banner-icon">
+        <div class="banner-content">  
+            <h1>Belajar Dimana Saja & Kapan Saja <br> Mudah Dengan AsikBelajar</h1>
+        </div>
+    </section>
+
+    <div class="feature-part">
+        <section class="feature-section">
+            <div class="feature-box">
+                <img src="https://media.canva.com/v2/files/uri:ifs%3A%2F%2FM%2FfiekWKCaQhBxZHdcOqqKvaSfSUY_2WGAZTpcnnVk0Hs.png?csig=AAAAAAAAAAAAAAAAAAAAAAN-i0sQtLll0iXzLe0yg6HRrQTh-u_cJXkGbHOntLQF&exp=1779422507&signer=media-rpc&token=AAIAAU0AL2ZpZWtXS0NhUWhCeFpIZGNPcXFLdmFTZlNVWV8yV0dBWlRwY25uVmswSHMucG5nAAAAAAGeTdiv-FmOLGMB46LIIbn9OKFdokecn-BUS8it8Hf26VqQRCiT" alt="Info User" class="icon-info-user">
+                <p>Admin, User & Guru <br> Data Management</p>
+            </div>
+            <div class="feature-box">
+                <img src="https://media-public.canva.com/0y6pU/MAGRpC0y6pU/1/t.png" alt="Gambar Info Latihan" class="icon-info-latihan">
+                <p>Latihan Berguna <br>Dan Bertambah Pintar </p>
+            </div>
+            <div class="feature-box">
+                <img src="https://media-public.canva.com/aAqMk/MAFUtWaAqMk/1/t.png" alt="info gratis abiez" class="icon-info-gratis">
+                <p> Gratis dan Dapat <br>Diakses Di Mana Saja</p>
+            </div>
+        </section>
+
+
+<script src="Home Screen javascript.js"></script>

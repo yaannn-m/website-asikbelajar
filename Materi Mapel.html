@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Website AsikBelajar </title>
+        <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="Materi Mapel.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+<!-------------------------------------Nav Menu---------------------------------->
+<body>
+    <nav class="nav">
+        <div class="nav-logo">
+            <img src="https://media-public.canva.com/4YGeM/MAEz5J4YGeM/1/t.png" alt="Logo AsikBelajar" class="logo-img">
+            <p>AsikBelajar</p>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="Home Screen AsikBelajar.html" class="link">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="link active" id="materiBtn">Materi <i class="bx bx-chevron-down"></i></a>
+                    <ul class="dropdown-menu" id="materiDropdown">
+                        <li><a href="Materi Mapel.html?subject=sejarah" onclick="tampilkanMateri('sejarah');">Sejarah</a></li>
+                        <li><a href="Materi Mapel.html?subject=sosiologi" onclick="tampilkanMateri('sosiologi');">Sosiologi</a></li>
+                        <li><a href="Materi Mapel.html?subject=ekonomi" onclick="tampilkanMateri('ekonomi');">Ekonomi</a></li>
+                        <li><a href="Materi Mapel.html?subject=geografi" onclick="tampilkanMateri('geografi');">Geografi</a></li>
+                    </ul>
+                </li>
+                <li><a href="Latihan.html" class="link">Latihan</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="nav-button">
+            <a href="index Web Belajar.html#target-login"><button class="btn" id="loginBtnNAV">Login</button></a>
+            
+            <span id="userGreeting" class="user-greeting" style="display: none;"></span>
+        </div>
+    </nav>
+
+<!----------------------------------------------------------------------------->
+<div id="materiSosio" class="materiSosio materi-hidden">
+    <h1>Sosiologi</h1>
+    <h2><br><br>Bab 1: Pengantar Sosiologi</h2>
+    <p>Sosiologi adalah ilmu yang mempelajari masyarakat, interaksi antarmanusia, serta pola-pola hubungan sosial yang terbentuk di dalamnya. Melalui sosiologi, kita dapat memahami bagaimana individu dan kelompok saling memengaruhi, bagaimana nilai dan norma mengatur kehidupan bersama, serta bagaimana struktur sosial terbentuk dan berubah seiring waktu. Sosiologi tidak hanya membahas fenomena yang tampak di permukaan, tetapi juga meneliti faktor-faktor penyebab di balik perilaku sosial, seperti budaya, ekonomi, politik, dan sejarah.<br><br>Sebagai ilmu, sosiologi menggunakan metode ilmiah untuk mengumpulkan data, menganalisis, dan menarik kesimpulan yang dapat digunakan untuk memahami dan memecahkan masalah sosial. Pemahaman ini membantu kita melihat masalah seperti kemiskinan, ketidaksetaraan, kriminalitas, dan perubahan sosial secara lebih objektif</p>
+    <div class="box-coming-soon">
+        <p>New Content Coming Soon!</p>
+    </div>
+</div>
+
+<div id="materiSejarah" class="materiSejarah materi-hidden">
+    <h1>Sejarah</h1>
+    <h2><br><br>Bab 1: Konsep Dasar Berpikir Sejarah</h2>
+    <p>Sejarah bukan sekadar kumpulan tanggal, nama tokoh, atau hafalan peristiwa masa lalu. Secara etimologi, sejarah berasal dari bahasa Arab Syajaratun yang berarti "pohon". Seperti pohon yang tumbuh dari akar, batang, lalu ke ranting, sejarah menggambarkan peristiwa masa lalu yang saling berkaitan dan terus berkembang membentuk masa kini. Sejarah adalah rekonstruksi peristiwa yang dialami manusia di masa lampau yang disusun secara ilmiah berdasarkan sumber-sumber yang valid dan dapat dipertanggungjawabkan.<br><br>Pemahaman kita tentang sejarah hari ini dibentuk oleh para pemikir besar yang mengubah cara manusia mencatat masa lalunya. Herodotus, seorang sejarawan Yunani Kuno, dijuluki sebagai "Bapak Sejarah" karena ia adalah orang pertama yang membedakan mitos dengan fakta sejarah serta melakukan observasi langsung atas peristiwa yang dicatatnya. <br><br>Untuk memahami sejarah, kita perlu menggunakan dua metode berpikir. Pertama adalah Diakronis, yaitu cara berpikir yang memanjang dalam waktu namun menyempit dalam ruang. Kita fokus pada kronologi atau urutan waktu kejadian suatu peristiwa. Kedua adalah Sinkronis, yaitu cara berpikir yang meluas dalam ruang namun menyempit dalam waktu. Metode ini mengajak kita untuk menganalisis suatu peristiwa secara mendalam di masa tertentu, melihat faktor sosial, politik, dan ekonomi yang memengaruhinya, seolah-olah kita sedang membedah sebuah foto di satu titik waktu.</p>
+    <div class="box-coming-soon">
+        <p>New Content Coming Soon!</p>
+    </div>
+</div>
+
+<div id="materiEkonomi" class="materiEkonomi materi-hidden">
+    <h1>Ekonomi</h2>
+    <h2><br><br>Bab 1: Konsep Dasar Ilmu Ekonomi</h2>
+    <p>Istilah "Ekonomi" berasal dari bahasa Yunani Kuno, yaitu <i>"Oikonomia"</i>. Kata ini merupakan gabungan dari dua kata, yakni: <i>Oikos</i>, yang berarti rumah tangga, dan <i>Nomos</i>, yang berarti aturan, hukum, atau pengelolaan. Jadi, secara harfiah, ekonomi berarti "aturan pengelolaan rumah tangga". Konsep ini awalnya digunakan oleh bangsa Yunani untuk menggambarkan bagaimana keluarga mengelola sumber daya yang terbatas agar kebutuhan seluruh anggota keluarga dapat terpenuhi dengan baik. <br><br>Ilmu ekonomi modern mulai terbentuk secara sistematis berkat <b>Adam Smith</b>. Melalui mahakaryanya, <i>The Wealth of Nations</i> (1776), ia mencetuskan konsep <i>The Invisible Hand</i> atau "tangan tak terlihat". Ia berargumen bahwa dalam pasar bebas, individu yang mengejar kepentingan pribadinya secara tidak langsung justru akan mendorong kemajuan ekonomi bagi masyarakat secara keseluruhan. Pemikiran inilah yang meletakkan dasar bagi sistem ekonomi pasar modern yang kita kenal sekarang.<br><br>Perkembangan ilmu ekonomi tidak berhenti pada Adam Smith, tetapi terus diperkaya oleh pemikiran berbagai tokoh besar dengan sudut pandang yang unik. <b>David Ricardo</b> memperluas dasar pemikiran Smith dengan merumuskan <b>teori keunggulan komparatif</b> yang menjelaskan mengapa perdagangan internasional bermanfaat bagi semua negara. Di sisi lain, ketika dunia mengalami krisis ekonomi besar pada tahun 1930-an, <b>John Maynard Keynes</b> muncul sebagai penyelamat dengan gagasannya tentang <b>ekonomi makro</b>, di mana ia menekankan bahwa pemerintah harus melakukan intervensi aktif melalui belanja publik untuk menjaga stabilitas pasar.<br><br>Ilmu Ekonomi lahir karena adanya masalah mendasar manusia, yaitu kelangkaan (scarcity). Kebutuhan manusia yang tidak terbatas harus berhadapan dengan ketersediaan alat pemuas kebutuhan yang sangat terbatas jumlahnya.<br><br>Dalam bab ini, kita akan mempelajari prinsip ekonomi, motif ekonomi, dan bagaimana tindakan ekonomi yang rasional dapat membantu individu maupun kelompok dalam mengalokasikan sumber daya mereka secara bijak guna mencapai kemakmuran bersama</p>
+    <div class="box-coming-soon">
+        <p>New Content Coming Soon!</p>
+    </div>
+</div>
+
+<div id="materiGeografi" class="materiGeografi materi-hidden">
+    <h1>Geografi</h1>
+    <h2><br><br>Bab 1: Pengantar Konsep Esensial Geografi</h2>
+    <p>Geografi adalah ilmu yang mempelajari persamaan dan perbedaan fenomena geosfer dengan sudut pandang kewilayahan dan kelingkungan dalam konteks keruangan. Objek kajian geografi meliputi atmosfer (lapisan udara), litosfer (lapisan kulit bumi/batuan), hidrosfer (lapisan air), biosfer (dunia tumbuhan dan hewan), serta antroposfer (aktivitas manusia).<br><br>Geografi tidak sekadar menghafal lokasi di peta, tetapi memahami bagaimana manusia berinteraksi dengan lingkungannya. Ilmu ini mengajarkan kita tentang 10 konsep esensial seperti lokasi, jarak, keterjangkauan, pola, dan morfologi. Dengan mempelajari konsep-konsep tersebut, kita dapat menganalisis mengapa suatu fenomena terjadi di wilayah tertentu, bagaimana dampaknya terhadap kehidupan masyarakat, dan bagaimana kita dapat mengelola sumber daya alam secara berkelanjutan demi masa depan bumi yang lebih baik.</p>
+    <div class="box-coming-soon">
+        <p>New Content Coming Soon!</p>
+    </div>
+</div>
+
+    <script src="Home Screen javascript.js"></script>

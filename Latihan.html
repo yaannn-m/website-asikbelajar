@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Website AsikBelajar </title>
+        <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="Latihan style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+<!-------------------------------------Nav Menu---------------------------------->
+<body>
+    <nav class="nav">
+        <div class="nav-logo">
+            <img src="https://media-public.canva.com/4YGeM/MAEz5J4YGeM/1/t.png" alt="Logo AsikBelajar" class="logo-img">
+            <p>AsikBelajar</p>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="Home Screen AsikBelajar.html" class="link">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="link" id="materiBtn">Materi <i class="bx bx-chevron-down"></i></a>
+                    <ul class="dropdown-menu" id="materiDropdown">
+                        <li><a href="Materi Mapel.html?subject=sejarah" onclick="tampilkanMateri('sejarah');">Sejarah</a></li>
+                        <li><a href="Materi Mapel.html?subject=sosiologi" onclick="tampilkanMateri('sosiologi');">Sosiologi</a></li>
+                        <li><a href="Materi Mapel.html?subject=ekonomi" onclick="tampilkanMateri('ekonomi');">Ekonomi</a></li>
+                        <li><a href="Materi Mapel.html?subject=geografi" onclick="tampilkanMateri('geografi');">Geografi</a></li>
+                    </ul>
+                </li>
+                <li><a href="Latihan.html" class="link active">Latihan</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="nav-button">
+            <a href="index Web Belajar.html#target-login"><button class="btn" id="loginBtnNAV">Login</button></a>
+            
+            <span id="userGreeting" class="user-greeting" style="display: none;"></span>
+        </div>
+    </nav>
+
+<!--------------------------body-------------------------->
+
+<div class="main-container">
+        <h1 class="section-title">Materi yang Tersedia</h1>
+        
+        <div class="search-wrapper">
+            <div class="search-bar">
+                <div class="search-icon-box">
+                    <img src="https://media-public.canva.com/MADnUBZSK-s/1/thumbnail.png">
+                </div>
+                <input type="text" id="searchInput" placeholder="Cari Pelajaran">
+            </div>
+        </div>
+
+
+  <div class="materi-grid">
+    
+    <div class="materi-card">
+        <div class="box-frame">
+            <img src="https://media.canva.com/v2/image-resize/format:JPG/height:800/quality:92/uri:ifs%3A%2F%2FM%2Ff4f2397e-3f34-4691-9e5b-398bcd8c0684/watermark:F/width:1200?csig=AAAAAAAAAAAAAAAAAAAAAA4AsXZ_PnlxWzGya6L_K1WPLsaqfuz41JkbPz1V3n2_&exp=1779733426&osig=AAAAAAAAAAAAAAAAAAAAANM_fBI4KFw9LpCVJ9YXVEjQZ-nmStcmh9-w6gdUYXIr&signer=media-rpc&x-canva-quality=screen_3x" alt="Algoritma Pemrograman">
+            <h3>Algoritma Pemrograman</h3>
+        </div>
+        <button class="btn-join">Join</button>
+    </div> <div class="materi-card">
+        <div class="box-frame">
+            <img src="https://media.canva.com/v2/image-resize/format:JPG/height:419/quality:92/uri:ifs%3A%2F%2FM%2F071e08c7-c3c3-4164-a767-42dfc2eecd4d/watermark:F/width:585?csig=AAAAAAAAAAAAAAAAAAAAALjSTqxmDuR1KCQcS8D7s5HNuFpdO-bdLoG0DjCMPEdN&exp=1779730451&osig=AAAAAAAAAAAAAAAAAAAAAPdmmw7rUTzLjAktZMAHyuTMAuC3PnKlzV6jVQGLdx3-&signer=media-rpc&x-canva-quality=screen_3x" alt="Aljabar Linear">
+            <h3>Aljabar Linear</h3>
+        </div>
+        <button class="btn-join">Join</button>
+    </div> <div class="materi-card">
+        <div class="box-frame">
+            <img src="https://media.canva.com/v2/image-resize/format:JPG/height:1488/quality:92/uri:ifs%3A%2F%2FM%2Ff962bb2d-821e-4228-a2f0-3863a16b2bd5/watermark:F/width:1942?csig=AAAAAAAAAAAAAAAAAAAAAG8dwFMVYKv4DFWeyR0x4sTC7cX9OILxFSNVwidevxT5&exp=1779733534&osig=AAAAAAAAAAAAAAAAAAAAAAFL8hEDZMfw5cVdhK0Lz1SWRXhbh8wbeLu7OEvmi8nQ&signer=media-rpc&x-canva-quality=screen_3x" alt="Data Structure">
+            <h3>Data Structure</h3>
+        </div>
+        <button class="btn-join">Join</button>
+    </div> </div>
+
+</div>
+
+<script src="Home Screen javascript.js"></script>

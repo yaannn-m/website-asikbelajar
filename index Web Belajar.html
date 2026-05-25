@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Website AsikBelajar </title>
+        <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="Website Belajar.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+<!-------------------------------------Nav Menu---------------------------------->
+<body>
+    <nav class="nav">
+        <div class="nav-logo">
+            <img src="https://media-public.canva.com/4YGeM/MAEz5J4YGeM/1/t.png" alt="Logo AsikBelajar" class="logo-img">
+            <p>AsikBelajar</p>
+        </div>
+                <div class="nav-menu">
+            <ul>
+                <li><a href="Home Screen AsikBelajar.html" class="link">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="link" id="materiBtn">Materi <i class="bx bx-chevron-down"></i></a>
+                    <ul class="dropdown-menu" id="materiDropdown">
+                        <li><a href="Materi Mapel.html?subject=sejarah" onclick="tampilkanMateri('sejarah');">Sejarah</a></li>
+                        <li><a href="Materi Mapel.html?subject=sosiologi" onclick="tampilkanMateri('sosiologi');">Sosiologi</a></li>
+                        <li><a href="Materi Mapel.html?subject=ekonomi" onclick="tampilkanMateri('ekonomi');">Ekonomi</a></li>
+                        <li><a href="Materi Mapel.html?subject=geografi" onclick="tampilkanMateri('geografi');">Geografi</a></li>
+                    </ul>
+                </li>
+                <li><a href="Latihan.html" class="link">Latihan</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!----------------------------------Form Box---------------------------->
+   <div class="container">
+    <div class="form-box login" id="target-login"> 
+        <form id="loginForm" action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" id="loginUser" placeholder="Username" required>
+                <i class="bxf bx-user"></i>
+            </div>
+            <div class="wrapper">
+                <input type="password" id="passwordField" placeholder="Password" required>
+                <span class="show-btn"><i class="bxf bx-eye-slash" id="togglePassword" style="cursor: pointer;"></i></span>
+            </div>
+            <script>
+                const passfield=document.getElementById("passwordField");
+                const showbtn=document.querySelector("span i");
+                showbtn.onclick=(()=>{
+                    if(passfield.type==="password"){
+                        passfield.type="text"
+                        showbtn.classList.replace("bx-eye-slash", "bx-eye");
+                    }else{
+                        passfield.type="password"
+                        showbtn.classList.replace("bx-eye", "bx-eye-slash");
+                    }
+                })
+            </script>
+            <div class="forgot-link">
+                <a href="#">Forgot Password?</a>
+                <h1 id="forgotMessage" class="forgot-popup hidden">yah lupa ya passwordnya? kasian deh <br>coba diinget aja</h1>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+        </form>
+    </div>
+
+    <!--------------------------------------FORM BOX REGISTER--------------------------->
+    <div class="form-box register" id="target-register">
+        <form id="registerForm">
+            <h1>Create A New Account</h1>
+            <div class="input-box">
+                <input type="text" id="regUser" placeholder="Username" required>
+                <i class="bxf bx-user"></i>
+            </div>
+             <div class="input-box">
+                <input type="email" id="regEmail" placeholder="Email Address" required>
+                <i class="bxf bx-envelope"></i>
+            </div>
+            <div class="wrapper">
+                <input type="password" id="registerpasswordField" placeholder="Password" required>
+                <span class="show-btn"><i class="bxf bx-eye-slash" id="toggleRegisterPassword" style="cursor: pointer;"></i></span>
+            </div>
+
+            <div class="wrapper">
+                <input type="password" id="confirmPasswordField" placeholder="Confirm Password" required>
+                <span class="show-btn"><i class="bxf bx-eye-slash" id="toggleConfirmPassword" style="cursor: pointer;"></i></span>
+            </div>
+
+            <button type="submit" class="btn">Sign Up</button>
+            
+        </form>
+    </div>
+
+    <div class="toggle-box">
+        <div class="toggle-panel toggle-left">
+            <img src="https://media-public.canva.com/TJdYo/MAEdGlTJdYo/1/s.png" alt="Dekorasi Halaman Login" style="width: 50%; height: auto; margin-bottom: 20px; object-fit: contain;">
+            <h1>Selamat Datang Kembali!</h1>
+            <p>Belum punya akun?</p>
+            <button class="btn register-btn">Register</button>
+        </div>
+        <div class="toggle-panel toggle-right">
+            <img src="https://media-public.canva.com/TJdYo/MAEdGlTJdYo/1/s.png" alt="Dekorasi Halaman Login" style="width: 50%; height: auto; margin-bottom: 20px; object-fit: contain;">
+            <h1>Selamat Datang!</h1>
+            <p>Sudah punya akun?</p>
+            <button class="btn login-btn">Login</button>
+        </div>
+    </div>
+   </div>
+
+
+   <script src="script.js"></script>
+</body>
+
+</html>
